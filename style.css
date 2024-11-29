@@ -20,17 +20,6 @@ a{
     width: 320px;
 }
 
-.header-shadow{
-    background: linear-gradient(45deg, #ffffff, #120F0F);
-    width: 640px;
-    height: 231px;
-    transform: rotate(45deg);
-    position: absolute;
-    filter: blur(130px);
-    top: 200px;
-    left: -50px;
-    margin: 0;
-}
 
 
 
@@ -152,15 +141,13 @@ a{
 
 
 
-
 .button-c {
     display: flex;
     gap: 100px;
     position: relative;
     margin-top: 80px;
-
 }
-
+  
 .button {
     position: relative;
     padding: 25px 40px;
@@ -173,15 +160,8 @@ a{
     overflow: hidden;
     transition: all 0.3s ease;
 }
-
-.button:hover {
-    transform: scale(1.05);
-}
-
-.button1:hover{
-    transform: scale(1.05);
-}
-
+  
+  
 .button::before {
     content: '';
     position: absolute;
@@ -192,47 +172,47 @@ a{
     background: rgba(255, 255, 255, 0.2);
     transition: all 0.3s ease;
 }
-
-
-
+  
 .button:hover::before {
     left: 100%;
 }
-
-.button1:hover::before {
-    left: 100%;
-}
-
+  
 .button-email {
     background-color: white;
     color: #111;
 }
-
-.button1-email {
-    background-color: white;
-    color: #111;
-}
-
+  
 .button-cv {
-    background-color: transparent;
+    padding: 25px 50px;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: bold;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    background-color: #111;
     color: white;
+    justify-content: center;  
+    display: inline-flex;
+    gap: 10px;
     border: 1px solid white;
 }
-
+  
 .button-email:hover {
     box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
 }
-
+  
 .button-cv:hover {
     box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
     background-color: rgba(255, 255, 255, 0.1);
 }
-
+  
 .button img {
-    width: 24px;
-    height: 24px;
+    width: 20px;
+    height: 20px;
     margin-right: 10px;
 }
+
 
 .line1{
     align-self: center;
@@ -416,10 +396,10 @@ a{
 
 .about-text{
     color: white;
-    max-width: 100%;
-    line-height: 28px;
-    letter-spacing: 1.5px;
-    margin-left: 300px;
+    width: 600px;
+    line-height: 30px;
+    letter-spacing: 1px;
+    margin-left: 100px;
     font-size: 16px;
     margin-top: 30px;
 }
@@ -438,10 +418,6 @@ a{
     left: -8px;
 }
 
-
-
-
-
 .toggle-section {
     width: 300px;
     color: #fff;
@@ -449,7 +425,6 @@ a{
     margin: 20px auto;
     cursor: pointer;
 }    
-
 
 .toggle-header {
     display: flex;
@@ -835,18 +810,32 @@ a{
 }
 
 
-.button1 {
-    gap: 10px;
-    padding: 25px 40px;
-    border-radius: 50px;
-    font-size: 16px;
-    font-weight: bold;
-    text-decoration: none;
-    display: inline-flex;
-    align-items: center;
-    transition: all 0.3s ease;
-    margin-top: 60px;
+.button-bottom-container {
+    display: flex;               
+    margin-bottom: 60px;
+    margin-top: 40px;
 }
+
+
+.button {
+    padding: 20px 40px;       
+    font-size: 16px;
+    font-weight: 600;          /* Adjust font size */
+    border: none;             /* Remove default border */
+    border-radius: 50px;      /* Rounded corners (match image) */
+    background-color: white;  /* Background color */
+    color: black;             /* Text color */
+    text-align: center;       /* Center text inside button */
+    text-decoration: none;    /* Remove underline */
+    display: inline-flex;     /* Use flexbox for alignment */
+    align-items: center;      /* Align icon and text vertically */
+    justify-content: center;  /* Center content horizontally */
+    gap: 4px;                 /* Space between icon and text */
+    cursor: pointer;          /* Pointer cursor on hover */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth hover effect */
+}
+
 
 
 .email{
@@ -1357,6 +1346,22 @@ h1 {
         overflow: hidden;
     }
 
+    .button-cv {
+        padding: 16px 65px;
+        border-radius: 50px;
+        font-size: 16px;
+        font-weight: bold;
+        align-items: center;
+        text-align: center;
+        text-decoration: none;
+        background-color: #111;
+        color: white;
+        justify-content: center;  
+        display: inline-flex;
+        gap: 10px;
+        border: 1px solid white;
+    }
+
    
 
     .button img{
@@ -1675,15 +1680,6 @@ h1 {
         text-align: center;
     }
 
-    .button1.button-email{
-        padding: 16px 24px;
-        font-size: 14px;
-        margin-bottom: 60px;
-        text-align: center;
-        margin-top: 30px;
-        max-width: 100%;
-        margin-left: 40px;
-    }
 
     .footer-text{
         font-size: 12px;
@@ -1693,7 +1689,7 @@ h1 {
         width: 100%;
         margin: 0;
         padding: 0;
-        margin-bottom: 20px;
+        margin-bottom: 8px;
     }
 
 
@@ -1880,17 +1876,34 @@ h1 {
         overflow: hidden;
     }
 
+    
+    .button-bottom-container {
+        display: flex;           
+        justify-content: center; 
+        align-items: center;     
+        margin-bottom: 60px;
+    }
+
+    
+    .button1 {
+        padding: 20px 25px;      
+        font-size: 16px;         
+        border-radius: 50px;      
+        text-align: center;      
+        background-color: #fFF; 
+        color: #111;            
+        text-decoration: none;   
+        font-size: 16px;
+        margin-top: 30px;
+    }
+
+
     .button1 img{
         width: 18px;
         height: 18px;
         overflow: hidden;
     }
 
-    .button2 img{
-        width: 18px;
-        height: 18px;
-        overflow: hidden;
-    }
 
     .cta-button{
         font-size: 16px;
