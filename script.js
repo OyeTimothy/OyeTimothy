@@ -95,4 +95,3 @@ const observer = new IntersectionObserver((entries) => {
   document.querySelectorAll('.fade-in-section').forEach(section => {
     observer.observe(section);
   });
-
